@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="/Amazon/images/amazon.icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body >
+<div style="position: relative; display: inline-block;">
+        <div style="position: absolute;
+                    display: flex; 
+                    width: 100%; 
+                    align-items: center;
+                    padding: 20px;" >
+
+<audio id="music1"  autoplay loop >
+    <source src="/Fighting Games/club-fight-113462.mp3">
+</audio>
+<audio id="music2"   >
+    <source src="/Fighting Games/ko-95973.mp3">
+</audio>
+<audio id="music3"   >
+    <source src="/Fighting Games/sword-01-108326.mp3">
+</audio>
+<audio id="music4"   >
+    <source src="/Fighting Games/sword-cut-type-1-230552.mp3">
+</audio>
+<audio id="music5"   >
+    <source src="/Fighting Games/thump-105302.mp3">
+</audio>
+<audio id="music6"   >
+    <source src="/Fighting Games/thump-105302.mp3">
+</audio>
+                    <!--Player's Health-->
+        <div style="position: relative;
+                    display:flex;
+                    justify-content: flex-end;  
+                    
+                    width: 100%;
+                    border-top: 4px solid rgb(230, 231, 255);
+                        border-bottom: 4px solid rgb(230, 231, 255);
+                        border-left: 4px solid rgb(230, 231, 255);
+                    ">
+            <div  style="background-color:red; 
+                      height: 30px; width:100%;
+                      "></div>
+            <div id="playerHealth"
+                        style="position: absolute;
+                        top: 0; bottom: 0;
+                         right: 0;
+                        background-color: #818CF8;
+                        height: 30px;
+                        width: 100%;"></div>
+        </div>
+
+
+                      <!--Timer-->
+            <div id="timer" style="background-color: black; 
+                        height: 50px; 
+                        width: 100px; 
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        border: 4px solid rgb(230, 231, 255);
+                        ">
+            10
+            </div >
+
+
+
+
+             <!--Enemy's Health-->
+        <div  style="position: relative; 
+                   width: 100%;
+                   border-top: 4px solid rgb(230, 231, 255);
+                        border-bottom: 4px solid rgb(230, 231, 255);
+                        border-right: 4px solid rgb(230, 231, 255);">
+                <div style="background-color: red;
+                      height: 30px; "></div>
+                <div id="enemyHealth" 
+                style=" position: absolute;
+                top: 0; right: 0;
+                bottom: 0; left :0;
+                background-color: #818CF8;
+                      height: 30px; width: 100%; " ></div>
+                </div>
+        </div>
+
+        <div id="displayText"
+        style="position: absolute;
+        color: white;
+        display: none;
+        top: 0; left : 0; right :0; bottom: 0;
+        justify-content: center;
+        align-items: center;
+        ">Tie</div>
+<canvas></canvas>
+</div>
+<script
+ src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" 
+ integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" 
+ crossorigin="anonymous" 
+ referrerpolicy="no-referrer">
+</script>
+<script src="/Fighting Games/js/util.js"></script>
+<script src="/Fighting Games/js/classes.js"></script>
+<script src="/Fighting Games/index.js"></script>
+</body>
+</html>
